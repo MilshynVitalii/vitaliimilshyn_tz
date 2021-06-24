@@ -1,0 +1,55 @@
+.form {
+  width: 769px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  &.invalidForm {
+    .field__set-danger {
+      color: transparent;
+    }
+
+    .field__set-input {
+      border-color: inherit;
+    }
+  }
+
+  &__header {
+    font-weight: 700;
+    color: #888;
+    padding-bottom: 40px;
+    font-size: 18px;
+
+    &-user {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      color: #000;
+    }
+  }
+
+  &__confirm {
+    &-btn {
+      width: 100px;
+      padding: 10px 0;
+      margin-right: 20px;
+      background-color: yellowgreen;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken(yellowgreen, 10%);
+      }
+
+      &:active {
+        background-color: darken(yellowgreen, 15%);
+      }
+    }
+
+    &-date {
+      font-size: 12px;
+      color: #aaa;
+    }
+  }
+}
